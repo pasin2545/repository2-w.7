@@ -6,7 +6,7 @@ int main()
     int sum = 0;
     int metrix[100][100];
 
-    scanf_s("%u %u", &row, &col);
+    scanf_s("%d %d", &row, &col);
     if (row >= 1 && row <= 100 && col >= 1 && col <= 100&& row==col) {
         for (int i = 0; i < row; i++)
         {
@@ -22,7 +22,7 @@ int main()
             {
                 sum += metrix[i][j];
             }
-            printf("Sum of elements of Row %d = %d\n", i + 1, sum);
+            printf("Sum of Row %d = %d\n", i + 1, sum);
         }
         for (int i = 0; i < row; i++)
         {
@@ -31,7 +31,7 @@ int main()
             {
                 sum += metrix[j][i];
             }
-            printf("Sum of elements of Column %d = %d\n", i + 1, sum);
+            printf("Sum of Column %d = %d\n", i + 1, sum);
         }
     }
     return 0;
